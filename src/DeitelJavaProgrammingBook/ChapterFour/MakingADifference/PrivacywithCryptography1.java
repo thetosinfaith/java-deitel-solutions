@@ -12,8 +12,25 @@ with the third, and swap the second digit with the fourth. Then print the encryp
  */
 import java.util.Scanner;
 
-public class PrivacywithCryptography {
+public class PrivacywithCryptography1 {
+
     public static void main(String[] args) {
-        Scanner encrypt = new Scanner(System.in);
+        int add = 7;
+        int divide = 10;
+        Scanner userInput = new Scanner(System.in);
+
+        for (int input = 0; input < 4; input++) {
+            System.out.println("Enter digit: ");
+            int response = userInput.nextInt();
+
+        }
+
+
+
+
+
+
+
+
     }
 }
