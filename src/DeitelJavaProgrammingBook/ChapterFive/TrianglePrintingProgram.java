@@ -28,11 +28,11 @@ public class TrianglePrintingProgram {
     public static void main(String[] args) {
         for (int row1 = 0; row1 < 10; row1++) {
             for (int column1 = 0; column1 < row1; column1++) {
-                System.out.print("*"+ " ");
+                System.out.print("*" + " ");
             }
-            for (int row2 = 10; row2 < 0 ; row2++) {
+            for (int row2 = 10; row2 < 0; row2++) {
                 for (int column2 = 0; column2 < column2; column2++) {
-                    System.out.println("*"+ " ");
+                    System.out.println("*" + " ");
 
                 }
             }
@@ -40,6 +40,8 @@ public class TrianglePrintingProgram {
 
         }
 
+
+        }
+
     }
 
-}

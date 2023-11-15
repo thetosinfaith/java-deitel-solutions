@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class CylinderClass {
     static int getCylinderVolume() {
 
-        Scanner input = new Scanner(System.in);
 
         int radius = 1;
         int height = 1;
