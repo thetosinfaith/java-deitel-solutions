@@ -15,15 +15,67 @@ Write an application class named Petrol that demonstrates the capabilities of cl
 
  */
 public class PetrolPurchase {
-    String petrolLocation = "Semicolon";
-//    String typeOfPe trol = "Diesel";
-    int quantity = 2;
-    double pricePerLitre =  5.000;
-    double percentageDiscount = 5.0;
 
-    public PetrolPurchase(String petrolLocation, String typeOfPetrol, int quantity, double pricePerLitre, double percentageDiscount) {
-        this.petrolLocation = petrolLocation;
+   private String stationLocation;
+   private String typeOfPetrol;
+   private int quantityOfPurchaseInLitres;
+   private double pricePerLitre;
+   private double percentageDiscount;
 
+   public PetrolPurchase(String stationLocation,String typeOfPetrol, int quantityOfPurchaseInLitres, double pricePerLitre, double percentageDiscount){
+       this.stationLocation = stationLocation;
+       this.typeOfPetrol = typeOfPetrol;
+       this.quantityOfPurchaseInLitres = quantityOfPurchaseInLitres;
+       this.pricePerLitre = pricePerLitre;
+       this.percentageDiscount = percentageDiscount;
+    }
+    public void setStationLocation(String stationLocation){
+
+       this.stationLocation = stationLocation;
+    }
+    public String getStationLocation(){
+
+       return stationLocation;
+    }
+
+    public void setTypeOfPetrol(String typeOfPetrol){
+
+       this.typeOfPetrol = typeOfPetrol;
+    }
+    public String getTypeOfPetrol(){
+
+       return typeOfPetrol;
+    }
+
+    public void setQuantityOfPurchaseInLitres(int quantityOfPurchaseInLiters) {
+        this.quantityOfPurchaseInLitres = quantityOfPurchaseInLitres;
+    }
+    public int getQuantityOfPurchaseInLitres(){
+
+       return quantityOfPurchaseInLitres;
+    }
+    public void setPricePerLitres(double pricePerLitre){
+
+       this.pricePerLitre = pricePerLitre;
+    }
+    public double getPricePerLitre(){
+
+       return pricePerLitre;
+    }
+    public void setPercentageDiscount(double percentageDiscount){
+
+       this.percentageDiscount = percentageDiscount;
+    }
+    public double getPercentageDiscount(){
+
+       return percentageDiscount;
+    }
+
+    public double getPurchase() {
+       double totalAmount = quantityOfPurchaseInLitres * pricePerLitre;
+       double discountAmount = totalAmount * (percentageDiscount / 100);
+       double netPurchaseAmount = totalAmount - discountAmount;
+       return netPurchaseAmount;
 
     }
 }

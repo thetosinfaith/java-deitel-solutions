@@ -15,7 +15,7 @@ class RoundingNumbers1Test {
         double x = 0;
         double y = Math.floor(x + 0.5);
 
-        assertEquals(0.5, );
+        assertEquals(0, 3);
 
     }
 }
