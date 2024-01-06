@@ -9,9 +9,7 @@ public class Clock {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
-
 }
-
     public int getHour() {
         return hour;
     }

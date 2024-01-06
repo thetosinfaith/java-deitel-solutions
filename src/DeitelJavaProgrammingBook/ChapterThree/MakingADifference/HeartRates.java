@@ -31,15 +31,11 @@ public class HeartRates {
         this.yearOfBirth = yearOfBirth;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getFirstName() {
         return firstName;
     }
 
-    public void setLastName(String lastName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -47,40 +43,57 @@ public class HeartRates {
         return lastName;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getDateOfBirth() {
         return dateOfBirth;
+    }
 
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public int getMonth() {
+        return month;
     }
 
     public void setMonth(int month) {
         this.month = month;
     }
 
-    public int getMonth() {
-        return month;
-
+    public int getDay() {
+        return day;
     }
 
     public void setDay(int day) {
         this.day = day;
     }
 
-    public int getDay() {
-        return day;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
     public void setYearOfBirth(int yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
 
-    public int getYearOfBirth() {
-        return yearOfBirth;
+    public int getYears() {
+        return years;
     }
 
+    public void setYears(int years) {
+        this.years = years;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public int calculateUserAgeInYears(int years){
         int age = (years * 365) + ((month * 31) + day);
